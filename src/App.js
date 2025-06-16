@@ -10,6 +10,8 @@ function App() {
     const [isLoading, setIsLoading] = React.useState(true);
     const [searchValue, setSearchValue] = React.useState('');
     const [invites, setInvites] = React.useState([]);
+    const [succes, setSucces] = React.useState(false)
+
 
 
     React.useEffect( () => {
@@ -24,29 +26,35 @@ function App() {
         setSearchValue(e.target.value)
         console.log(searchValue)
     };
-    const onClickInvites = (id) => {
-        const stringId = String(id); // 👈 приводим к строке
 
-        setInvites((prev) =>
-            prev.includes(stringId)
-                ? prev.filter((_id) => _id !== stringId)
-                : [...prev, stringId]
-        );
 
+    const onClickInvite = (id) => {
+        if (invites.includes(id)){
+            setInvites(prevState => prevState.filter(_id => _id !== id) );
+            console.log(invites)
+        } else {
+            setInvites(prevState => [...prevState, id])
+        }
     };
 
+
+    const setSuc = () => setSucces(true) ;
 
     // const addInvites = ()
 
   return (
     <div className="App">
-      <Users
-          onClickInvites={onClickInvites}
-          invites={invites}
-          searchValue={searchValue}
-          onChangeSearchValue={onChangeSearchValue}
-          items={users}
-          isLoading={isLoading} />
+
+        {succes ? <Success count={invites.length} /> :
+            <Users
+                setSuc={setSuc}
+                searchValue={searchValue}
+                onChangeSearchValue={onChangeSearchValue}
+                items={users}
+                isLoading={isLoading} onClickInvite={onClickInvite} invites={invites} />
+
+        }
+
        {/*<Success />*/}
     </div>
   );

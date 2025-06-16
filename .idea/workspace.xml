@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c28ac5a7-fe40-4548-b52f-d6e100ec7501" name="Default Changelist" comment="" />
+    <list default="true" id="c28ac5a7-fe40-4548-b52f-d6e100ec7501" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Success.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Success.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2yPUipAGY9A93djRgANtpeAo2hg" />
   <component name="ProjectViewState">
@@ -36,11 +45,18 @@
       <updated>1749735832014</updated>
       <workItem from="1749735834177" duration="591000" />
       <workItem from="1749816820657" duration="2408000" />
-      <workItem from="1749819234494" duration="4152000" />
+      <workItem from="1749819234494" duration="4423000" />
+      <workItem from="1750075781576" duration="3282000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="648" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1750078869852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1750078869852" />
   </component>
 </project>

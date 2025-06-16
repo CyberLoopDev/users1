@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const User = ({firstName, lastName, id, avatar, email, onClickInvites, isInvited}) => (
+export const User = ({firstName, lastName, id, avatar, email, onClickInvite, isInvited}) => (
   <li>
     <div>
       <img className="avatar" src={avatar} alt="User" />
@@ -14,6 +14,6 @@ export const User = ({firstName, lastName, id, avatar, email, onClickInvites, is
         </p>
       </div>
     </div>
-    <img onClick={() => onClickInvites(id)} className="action" src={`/assets/${isInvited ? 'minus' : 'plus'}.svg`} alt="Action" />
+    <img onClick={() => onClickInvite(id)} className="action" src={`/assets/${isInvited ? 'minus' : 'plus'}.svg`} alt="Action" />
   </li>
 );
